@@ -1,0 +1,16 @@
+{%extends "base.html"%}
+{%block content%}
+    {% if all%}
+        {%for url in all%}
+            <p>
+                <a href="{{url.long_url}}">{{url.long_url}}</a>
+                <a href="http://127.0.0.1:5000/{{url.short_url}}">{{url.short_url}}</a>
+                <span>{{url.visited}}</span>
+            </p>
+        {%endfor%}
+    {% else %}
+        <h2>no urls</h2>
+    {% endif %}
+    
+    <a href='http://127.0.0.1:5000/'>HOME</a>
+{%endblock%}

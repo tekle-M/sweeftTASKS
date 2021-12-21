@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+customize name
+{% endblock %}
+
+{% block content %}
+<form action="#", method='post'>
+    <label for="url">change name with 8 symbols(only letters and digits) after http://127.0.0.1:5000/:</label>
+    <input type="text" name="custom" id="custom"
+        size ="8" value={{to_changeUrl}}
+        required>
+    <br>
+    <input type="submit" value="submit" >
+</form>
+{% endblock %}
+

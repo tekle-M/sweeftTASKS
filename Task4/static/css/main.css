@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+h1 {
+    text-align: center;
+    margin: 15px
+}
+
+p {
+    display: box;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 15px;
+}
+span {
+    margin: 5px;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 20px;
+    color: rgb(143, 7, 34);
+}
+a:hover{
+    color: rgb(51, 8, 17); 
+}
+input[type=submit] {
+    padding:10px;
+    margin: 10px;
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    cursor: pointer;
+}
+input[type=submit]:hover{
+    background-color:rgb(65, 97, 156) ;
+}
